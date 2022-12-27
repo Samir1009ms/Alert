@@ -18,8 +18,8 @@ body {
   margin-bottom: 15px;
 }
 .buttonlar .btn {
-  width: 70px;
-  height: 25px;
+  width: 85px;
+  height: 35px;
   background-color: red;
   color: white;
   border: none;
@@ -43,6 +43,9 @@ body {
 .buttonlar .alertBtnSuccess {
   background-color: rgb(132, 214, 90);
   color: rgb(57, 58, 55);
+}
+.buttonlar .qaydaBtn {
+  background-color: #ba958b;
 }
 
 .alertBtn {
@@ -72,9 +75,43 @@ body {
   justify-content: center;
   gap: 7px;
 }
+.alertcontainer .loginBtn .sert {
+  width: 100%;
+  height: 107.34vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -55px;
+  background-color: rgba(0, 0, 0, 0.7294117647);
+  z-index: 5;
+}
+.alertcontainer .loginBtn .sert .qaydaa {
+  position: absolute;
+  z-index: 6;
+  width: 24%;
+  background: #fff;
+  height: 49%;
+  overflow-y: scroll;
+  border-radius: 5px;
+  position: relative;
+}
+.alertcontainer .loginBtn .sert .qaydaa .fa-regular {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  font-size: 20px;
+  color: #ba958b;
+  cursor: pointer;
+}
+.alertcontainer .loginBtn .sert .qaydaa .fa-regular:hover {
+  color: red;
+  transform: scale(1.12);
+  transition: 0.987s;
+}
 .alertcontainer .loginBtn .login {
-  width: 60px;
-  height: 20px;
+  width: 80px;
+  height: 35px;
   background-color: #ba958b;
   color: white;
   border: none;
@@ -109,13 +146,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 28%;
-  height: 50%;
+  width: 25%;
+  height: 45%;
   gap: 19px;
   background-color: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
   position: relative;
+}
+.alertcontainer .loginBtn .Sign-container .loginParol {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
 }
 .alertcontainer .loginBtn .Sign-container .fa-circle-xmark {
   position: absolute;
@@ -138,11 +180,12 @@ body {
 }
 .alertcontainer .loginBtn .Sign-container .email {
   padding: 2px 13px;
-  width: 212px;
-  height: 29px;
+  width: 245px;
+  height: 42px;
   background-color: #eee;
   border: 1px solid #fff;
   border-radius: 6px;
+  outline: none;
 }
 .alertcontainer .loginBtn .Sign-container .daxil-ol {
   background-color: #ba958b;
@@ -162,7 +205,7 @@ body {
 }
 .alertcontainer .loginBtn .Signup-container {
   width: 29%;
-  height: 72%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,6 +215,11 @@ body {
   background-color: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
+}
+.alertcontainer .loginBtn .Signup-container .registerform {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
 }
 .alertcontainer .loginBtn .Signup-container .fa-circle-xmark {
   position: absolute;
@@ -194,23 +242,25 @@ body {
 }
 .alertcontainer .loginBtn .Signup-container .ad {
   padding: 2px 13px;
-  width: 106px;
-  height: 29px;
+  width: 122px;
+  height: 42px;
   background-color: #eee;
   border: 1px solid #fff;
   border-radius: 6px;
+  outline: none;
 }
 .alertcontainer .loginBtn .Signup-container .email {
   padding: 2px 13px;
-  width: 212px;
-  height: 29px;
+  width: 245px;
+  height: 42px;
   background-color: #eee;
   border: 1px solid #fff;
   border-radius: 6px;
+  outline: none;
 }
 .alertcontainer .loginBtn .Signup-container .qayda {
-  width: 215px;
-  font-size: 12px;
+  width: 242px;
+  font-size: 14px;
   display: flex;
   align-items: flex-start;
   gap: 3px;
@@ -235,20 +285,20 @@ body {
   display: block !important;
 }
 .alertcontainer .alert {
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 8px;
   right: 0;
   position: absolute;
   padding: 20px;
+  height: 55%;
 }
 .alertcontainer .alert .error {
   width: 100%;
   background-color: rgb(252, 232, 219);
   border-radius: 5px;
-  height: 40px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -281,7 +331,7 @@ body {
   width: 100%;
   background-color: rgb(215, 241, 253);
   border-radius: 5px;
-  height: 40px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -314,7 +364,7 @@ body {
   width: 100%;
   background-color: rgb(254, 247, 209);
   border-radius: 5px;
-  height: 40px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -351,7 +401,7 @@ body {
   width: 100%;
   background-color: rgb(132, 214, 90);
   border-radius: 5px;
-  height: 40px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;

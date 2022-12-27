@@ -19,18 +19,19 @@ body {
     margin-bottom: 15px;
 
     .btn {
-        width: 70px;
-        height: 25px;
+        width: 85px;
+        height: 35px;
         background-color: red;
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         transition: calc(0.342s);
-        &:hover{
-        transform: scale(1.012);
-        transition: calc(0.342s);
-        opacity: 0.8;
+
+        &:hover {
+            transform: scale(1.012);
+            transition: calc(0.342s);
+            opacity: 0.8;
         }
     }
 
@@ -47,6 +48,10 @@ body {
     .alertBtnSuccess {
         background-color: rgba(132, 214, 90, 1);
         color: rgba(57, 58, 55, 1)
+    }
+
+    .qaydaBtn {
+        background-color: #ba958b;
     }
 
 }
@@ -86,19 +91,62 @@ body {
         // background-color: yellow;
         gap: 7px;
 
+
+        .sert {
+            width: 100%;
+            height: 107.34vh;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: -55px;
+            background-color: #000000ba;
+            z-index: 5;
+
+            .qaydaa {
+                position: absolute;
+                z-index: 6;
+                width: 24%;
+                background: #fff;
+                height: 49%;
+                overflow-y: scroll;
+                border-radius: 5px;
+                position: relative;
+
+                .fa-regular {
+                    position: absolute;
+                    right: 5px;
+                    top: 4px;
+                    // color: rgb(0 0 0 / 77%);
+                    font-size: 20px;
+                    color: #ba958b;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: red;
+                        transform: scale(1.12);
+                        transition: calc(.987s);
+                    }
+
+                }
+
+            }
+        }
+
         .login {
-            width: 60px;
-            height: 20px;
+            width: 80px;
+            height: 35px;
             background-color: #ba958b;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: calc(0.678s);
-            &:hover{
-            transform: scale(1.038);
-            transition: calc(0.876s);
-            opacity: 0.7;
+
+            &:hover {
+                transform: scale(1.038);
+                transition: calc(0.876s);
+                opacity: 0.7;
             }
         }
 
@@ -127,13 +175,20 @@ body {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 28%;
-                height: 50%;
+                width: 25%;
+                height: 45%;
                 gap: 19px;
                 background-color: #fff;
                 border: 1px solid #e5e5e5;
                 border-radius: 10px;
                 position: relative;
+
+
+                .loginParol {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 19px;
+                }
 
                 .fa-circle-xmark {
                     position: absolute;
@@ -161,11 +216,12 @@ body {
 
                 .email {
                     padding: 2px 13px;
-                    width: 212px;
-                    height: 29px;
+                    width: 245px;
+                    height: 42px;
                     background-color: #eee;
                     border: 1px solid #fff;
                     border-radius: 6px;
+                    outline: none;
                 }
 
                 .daxil-ol {
@@ -190,7 +246,7 @@ body {
 
             &-container {
                 width: 29%;
-                height: 72%;
+                height: 60%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -200,6 +256,12 @@ body {
                 background-color: #fff;
                 border: 1px solid #e5e5e5;
                 border-radius: 10px;
+
+                .registerform {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 19px;
+                }
 
                 .fa-circle-xmark {
                     position: absolute;
@@ -227,25 +289,27 @@ body {
 
                 .ad {
                     padding: 2px 13px;
-                    width: 106px;
-                    height: 29px;
+                    width: 122px;
+                    height: 42px;
                     background-color: #eee;
                     border: 1px solid #fff;
                     border-radius: 6px;
+                    outline: none;
                 }
 
                 .email {
                     padding: 2px 13px;
-                    width: 212px;
-                    height: 29px;
+                    width: 245px;
+                    height: 42px;
                     background-color: #eee;
                     border: 1px solid #fff;
                     border-radius: 6px;
+                    outline: none;
                 }
 
                 .qayda {
-                    width: 215px;
-                    font-size: 12px;
+                    width: 242px;
+                    font-size: 14px;
                     display: flex;
                     align-items: flex-start;
                     gap: 3px;
@@ -283,21 +347,22 @@ body {
     }
 
     .alert {
-        width: 35%;
+        width: 30%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         gap: 8px;
         right: 0;
         position: absolute;
         padding: 20px;
+        height: 55%;
 
 
         .error {
             width: 100%;
             background-color: rgba(252, 232, 219, 1);
             border-radius: 5px;
-            height: 40px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -322,10 +387,11 @@ body {
                 color: rgba(113, 25, 47, 1);
                 cursor: pointer;
                 transition: calc(0.345s);
-                &:hover{
-                color: red;
-                transform: scale(1.023);
-                transition: calc(0.345s);
+
+                &:hover {
+                    color: red;
+                    transform: scale(1.023);
+                    transition: calc(0.345s);
                 }
             }
         }
@@ -334,7 +400,7 @@ body {
             width: 100%;
             background-color: rgba(215, 241, 253, 1);
             border-radius: 5px;
-            height: 40px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -360,10 +426,11 @@ body {
                 color: #0C2A75;
                 cursor: pointer;
                 transition: calc(0.345s);
-                &:hover{
-                color: red;
-                transform: scale(1.023);
-                transition: calc(0.345s);
+
+                &:hover {
+                    color: red;
+                    transform: scale(1.023);
+                    transition: calc(0.345s);
                 }
             }
 
@@ -375,7 +442,7 @@ body {
             width: 100%;
             background-color: rgba(254, 247, 209, 1);
             border-radius: 5px;
-            height: 40px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -407,10 +474,11 @@ body {
                 color: rgba(117, 81, 24, 1);
                 cursor: pointer;
                 transition: calc(0.345s);
-                &:hover{
-                color: red;
-                transform: scale(1.023);
-                transition: calc(0.345s);
+
+                &:hover {
+                    color: red;
+                    transform: scale(1.023);
+                    transition: calc(0.345s);
                 }
             }
 
@@ -423,7 +491,7 @@ body {
             width: 100%;
             background-color: rgba(132, 214, 90, 1);
             border-radius: 5px;
-            height: 40px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -446,10 +514,11 @@ body {
                 color: rgba(57, 58, 55, 1);
                 cursor: pointer;
                 transition: calc(0.345s);
-                &:hover{
-                color: red;
-                transform: scale(1.023);
-                transition: calc(0.345s);
+
+                &:hover {
+                    color: red;
+                    transform: scale(1.023);
+                    transition: calc(0.345s);
                 }
             }
 

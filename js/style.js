@@ -38,7 +38,7 @@ window.onclick = x => {
     if (x.target.classList.contains("alertBtnSuccess")) {
         success.classList.remove("hidden")
     }
-   
+
 }
 
 // ------------------------------------------------------------
@@ -50,7 +50,7 @@ const registerBtn = document.querySelector(".loginSignup")
 const closeBtn = document.querySelector(".end")
 const closeBtnup = document.querySelector(".endup")
 const sign = document.querySelector(".Sign")
-const signUp=document.querySelector(".Signup")
+const signUp = document.querySelector(".Signup")
 
 // const loginOpen=()=>{
 
@@ -59,10 +59,10 @@ const signUp=document.querySelector(".Signup")
 // }
 // loginBtn.addEventListener("click",loginOpen)
 
-loginBtn.addEventListener("click",()=>{
+loginBtn.addEventListener("click", () => {
     sign.classList.remove("hidden")
 })
-closeBtn.addEventListener("click",()=>{
+closeBtn.addEventListener("click", () => {
     sign.classList.add("hidden")
 })
 sign.addEventListener("click", (x) => {
@@ -71,10 +71,10 @@ sign.addEventListener("click", (x) => {
     }
 })
 
-registerBtn.addEventListener("click",()=>{
-signUp.classList.remove("hidden")
+registerBtn.addEventListener("click", () => {
+    signUp.classList.remove("hidden")
 })
-closeBtnup.addEventListener("click",()=>{
+closeBtnup.addEventListener("click", () => {
     signUp.classList.add("hidden")
 })
 signUp.addEventListener("click", (x) => {
@@ -82,4 +82,63 @@ signUp.addEventListener("click", (x) => {
         signUp.classList.add("hidden")
     }
 })
+const qayda = document.querySelector(".qaydalink")
+const sertler = document.querySelector(".sert")
+const qaydaend = document.querySelector(".qaydaend")
+const qaydaBtn = document.querySelector(".qaydaBtn")
+qayda.addEventListener("click", () => {
+    sertler.classList.remove("hidden")
+})
+
+qaydaend.addEventListener("click", () => {
+
+    sertler.classList.add("hidden")
+})
+
+qaydaBtn.addEventListener("click", () => {
+    sertler.classList.remove("hidden")
+})
+
+const form = document.querySelector(".registerform")
+
+const sifr = /^[a-zA-Z0-9]{8,12}$/
+
+form.sifree.addEventListener("keyup", (x) => {
+    if (sifr.test(x.target.value)) {
+        x.target.setAttribute("style", "color:green")
+
+    }
+    else {
+        x.target.setAttribute("style", "color:red")
+    }
+
+})
+
+form.sifre2.addEventListener("keyup", (x) => {
+    if (sifr.test(x.target.value)) {
+        x.target.setAttribute("style", "color:green")
+
+    }
+    else {
+        x.target.setAttribute("style", "color:red")
+    }
+
+})
+
+
+
+const formlogin = document.querySelector(".loginParol")
+const sifrr = /^[a-zA-Z0-9]{8,12}$/
+
+formlogin.parol.addEventListener("keyup", (z) => {
+    if (sifrr.test(z.target.value)) {
+        z.target.setAttribute("style", "color:green")
+    }
+    else {
+        z.target.setAttribute("style", "color:red")
+    }
+
+})
+
+
 
