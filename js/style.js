@@ -5,6 +5,7 @@ const error = document.querySelector(".error")
 const info = document.querySelector(".info")
 const warning = document.querySelector(".warning")
 const success = document.querySelector(".success")
+const alert = document.querySelector(".alert")
 
 // endSuccess.addEventListener("click",(x)=>{
 
@@ -12,10 +13,24 @@ const success = document.querySelector(".success")
 //         x.target.parentNode.classList.add("hidden")
 //     }
 // })
+
+function alertbtn(x) {
+x.classList.add("hidden")
+}
+
+setTimeout(()=>alertbtn(error),3000)
+setTimeout(()=>alertbtn(info),4000)
+setTimeout(()=>alertbtn(warning),5000)
+setTimeout(()=>alertbtn(success),6000)
+
 window.onclick = x => {
     if (x.target.classList.contains("endError")) {
+        
+
         x.target.parentNode.classList.add("hidden")
+
     }
+    
     if (x.target.classList.contains("endInfo")) {
         x.target.parentNode.classList.add("hidden")
     }
@@ -28,15 +43,19 @@ window.onclick = x => {
 
     if (x.target.classList.contains("alertBtnError")) {
         error.classList.remove("hidden")
+        setTimeout(()=>alertbtn(error),3000)
     }
     if (x.target.classList.contains("alertBtnInfo")) {
         info.classList.remove("hidden")
+        setTimeout(()=>alertbtn(info),3000)
     }
     if (x.target.classList.contains("alertBtnWarning")) {
         warning.classList.remove("hidden")
+        setTimeout(()=>alertbtn(warning),3000)
     }
     if (x.target.classList.contains("alertBtnSuccess")) {
         success.classList.remove("hidden")
+        setTimeout(()=>alertbtn(success),3000)
     }
 
 }
